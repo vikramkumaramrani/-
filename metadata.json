@@ -1,0 +1,6 @@
+{
+  "name": "شاي مخمخة | Shai M5m5a",
+  "description": "Explore the menu, discover tea and food favorites, and find شاي مخمخة in Al Wasl, Dubai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

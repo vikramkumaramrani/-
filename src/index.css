@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Cairo', system-ui, -apple-system, sans-serif;
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-arabic);
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  html[dir="ltr"] {
+    font-family: var(--font-latin);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #17110e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a1d18;
+  border-radius: 4px;
+  border: 1px solid rgba(200, 117, 61, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8753d;
+}
+
+/* Brand Gradient Utility */
+.brand-gradient {
+  background: linear-gradient(135deg, #c8753d 0%, #f4b65f 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(135deg, #c8753d 0%, #f4b65f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-glass {
+  background: rgba(23, 17, 14, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(232, 213, 183, 0.08);
+}
